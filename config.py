@@ -15,4 +15,13 @@ def root_path():
 def checkpoint_path():
     return os.path.join(root_path(),"checkpoint")
 
-print(root_path())
+def dataset_path():
+    return os.path.join(root_path(),"dataset")
+
+def src_path():
+    return os.path.join(root_path(),"src")
+
+def submission_path():
+    return os.path.join(root_path(),"submission")
+
+print(src_path())
