@@ -49,7 +49,7 @@ def get_model():
     model.add(Activation("softmax"))  
     return model
 def read_model():
-    model = load_model(save_model_dir)
+    model = load_model(saved_model_dir)
     return model
 def save_model_checkpoint():
     return ModelCheckpoint(model_checkpoint_dir,
